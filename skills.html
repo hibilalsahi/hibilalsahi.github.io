@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /*****SKILL SECTION*****/
+
+
+    * {
+        background-color: black;
+    }
+
+    .skill {
+        padding-top: 2rem;
+        font-size: 17px;
+        color: white;
+    }
+
+    .skill span {
+        float: right;
+    }
+
+    .skill div {
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+        background: #e7e7e7;
+        border-radius: 10px;
+    }
+
+    .skill div span {
+        background: #ffbf35;
+        height: 5px;
+        float: left;
+    }
+
+    div[role="progressbar"] {
+        color: #ffbf35;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        width: 100px;
+        ;
+        height: 100px;
+        ;
+        border-radius: 50%;
+
+        place-items: center;
+        display: grid;
+
+        --pgPercentage: var(--value);
+        background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+            conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+    }
+
+    .heading-text {
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    .skill b {
+        font-size: 2rem;
+        font-weight: 300;
+
+    }
+
+    .main-section {
+        padding-top: 8rem;
+    }
+
+
+
+
+
+    .background {
+        background-color: black;
+        padding-top: 10rem;
+        box-sizing: border-box;
+    }
+
+    .centerl {
+        height: 4vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .centerl h1 {
+        color: #b74b4b;
+        font-size: 4rem;
+        font-weight: 100;
+
+
+    }
+
+    .mid {
+        text-align: center;
+        padding-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* .mid img{
+        background-image: url(cv-1.png);
+        position: cover;
+        height: 888px;
+        width: 888px;
+        
+    } */
+    button {
+
+        margin: 1rem;
+        background-color: #ffbf35;
+        padding: 0.5rem 4rem 0.5rem 4rem;
+        color: black;
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        margin: 1rem;
+        background-color: #b74b4b;
+        padding: 0.5rem 12rem 0.5rem 12rem;
+        border-radius: 0.66rem;
+        color: white;
+        font-size: 1rem;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="#" class="logo">Sahi</a>
+
+        <nav>
+            <a href="/index.html" class="active"> Home</a>
+            <a href="/skills.html">Skills</a>
+            <a href="/project.html">resume</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+    <!------SKILL SECTION------>
+    <div class="main-section">
+        <div class="container">
+            <h2 class="heading-text">My Skills</h2>
+            <div class="width-50">
+                <div class="skill">
+                    <b>HTML</b>
+                    <span>85%</span>
+                    <div>
+                        <span style="width:95%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>CSS</b>
+                    <span>75%</span>
+                    <div>
+                        <span style="width:91%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>JavaScript</b>
+                    <span>65%</span>
+                    <div>
+                        <span style="width:85%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>React js</b>
+                    <span>0%</span>
+                    <div>
+                        <span style="width:4%"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="background">
+            <div class="centerl">
+                <h1>Resume</h1>
+            </div>
+            <div class="mid">
+                <a href="/cv-1.pdf" target="_blank">
+                    <i class="fa fa-download"></i>
+                    <button>CV Download</button>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
